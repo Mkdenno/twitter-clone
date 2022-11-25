@@ -9,12 +9,12 @@ const Leftpane = () => {
             <div className='container'>
                 <header>{twitter}</header>
                 <nav>
-                    <NavLink to="/"><span>{home} Home</span></NavLink>
-                    <NavLink to="/explore"><span>{explore}Explore</span></NavLink>
-                    <NavLink to="/notifications"><span> {notify}Notifications</span></NavLink>
-                    <NavLink to="/messages"><span>{message}Messages</span></NavLink>
-                    <NavLink to="/profile"><span>{profile}Profile</span></NavLink>
-                    <button className='more'><span>{more}More</span></button>
+                    <NavLink to="/" activeClassName="selected"><span>{home} Home</span></NavLink>
+                    <NavLink to="/explore" activeClassName="selected"><span>{explore}Explore</span></NavLink>
+                    <NavLink to="/notifications" activeClassName="selected"><span> {notify}Notifications</span></NavLink>
+                    <NavLink to="/messages" activeClassName="selected"><span>{message}Messages</span></NavLink>
+                    <NavLink to="/profile" activeClassName="selected"><span>{profile}Profile</span></NavLink>
+                    <button className='more' activeClassName="selected"><span>{more}More</span></button>
                 </nav>
                 <button className='tweet'>Tweet</button>
 

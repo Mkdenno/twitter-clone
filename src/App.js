@@ -1,7 +1,7 @@
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import { Leftpane } from './components';
-import Home from './components/pages/Home';
+import Home from './components/pages/home/Home';
 
 const App = () => {
   return (
@@ -16,7 +16,9 @@ const App = () => {
       <Route path='/lists' exact>Lists</Route>
       <Route path='/profile' exact>Profile</Route>
       </Routes>
-      <div className='right-pane'>RightPne</div>
+      <div className='right-pane'>
+        <h1>Trends for you</h1>
+      </div>
 
     </div>
   );
