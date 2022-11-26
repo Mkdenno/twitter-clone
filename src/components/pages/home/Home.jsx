@@ -3,6 +3,7 @@ import { BsStars } from 'react-icons/bs';
 import './home.css'
 import Input from './Input';
 
+
 const Home = () => {
   return (
     <div className='flex-grow border-l border-r border-gray-300 max-w-2xl'>
