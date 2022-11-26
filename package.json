@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@ctrl/ngx-emoji-mart": "^7.1.0",
+    "@emoji-mart/data": "^1.0.8",
+    "@emoji-mart/react": "^1.0.1",
     "@heroicons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
