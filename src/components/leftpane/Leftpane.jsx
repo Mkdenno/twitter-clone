@@ -9,7 +9,7 @@ const Leftpane = () => {
             <div className='container'>
                 <header>{twitter}</header>
                 <nav>
-                    <NavLink to="/" activeClassName="selected"><span>{home} Home</span></NavLink>
+                    <NavLink to="/" exact activeClassName="selected"><span>{home} Home</span></NavLink>
                     <NavLink to="/explore" activeClassName="selected"><span>{explore}Explore</span></NavLink>
                     <NavLink to="/notifications" activeClassName="selected"><span> {notify}Notifications</span></NavLink>
                     <NavLink to="/messages" activeClassName="selected"><span>{message}Messages</span></NavLink>
@@ -26,7 +26,7 @@ const Leftpane = () => {
                         </div>
                         <div>
                             <div className='name'>Dennis Kiprop</div>
-                            <div className='username'>@mairor</div>
+                            <div className='username'>@masiror</div>
                         </div>
                     </button>
                 </footer>

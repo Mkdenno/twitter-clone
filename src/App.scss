@@ -1,12 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+    position: relative;
 }
 .app{
     font-family: 'segoe','Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: 1.1fr 2.1fr 1.4fr;
+    // position: relative;
 }
+
 .right-pane{
     background-color: aqua;
     // background-color: #15202b;

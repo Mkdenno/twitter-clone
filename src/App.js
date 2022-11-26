@@ -6,7 +6,9 @@ import Home from './components/pages/home/Home';
 const App = () => {
   return (
     <div className="app">
-      <Leftpane/>
+      <div>
+      <Leftpane className="left-pane"/>
+      </div>
       <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path='/explore' exact>Explore</Route>
