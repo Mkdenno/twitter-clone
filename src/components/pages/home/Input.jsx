@@ -10,8 +10,11 @@ import {
     XIcon
     // PhotographIcon
 } from "@heroicons/react/outline"
-import Picker from '@emoji-mart/react'
 import './input.css'
+// import 'emoji-mart/css/emoji-mart.css'
+// import { Picker } from 'emoji-mart'
+import data from '@emoji-mart/data'
+import Picker from '@emoji-mart/react'
 
 
 const Input = () => {
@@ -31,25 +34,22 @@ const Input = () => {
 
     }
 
-    // const addEmoji = (e) => {
-    //     let symbol = e.unified.split(", ")
-    //     let EmojiArray = [];
-    //     symbol.forEach((el) => EmojiArray.push("0x" + el))
-    //     const emoji = String.fromCodePoint(...EmojiArray)
-    //     setInput(input + emoji)
-
-    // }
-
-    const addEmoji = e => {
+    const addEmoji = (e) => {
         console.log(e)
-        let sym = e.unified.split('-');
-        let codesArray = [];
-    
-        sym.forEach(el => codesArray.push('0x' + el));
-         //console.log(codesArray)  // ["0x1f3f3", "0xfe0f"]
-        let emojiPic = String.fromCodePoint(...codesArray); //("0x1f3f3", "0xfe0f")
-      console.log(emojiPic) //)
+        let symbol = e.unified.split(", ")
+        let EmojiArray = [];
+        symbol.forEach((el) => EmojiArray.push("0x" + el))
+        const emoji = String.fromCodePoint(...EmojiArray)
+        setInput(input + emoji)
+
     }
+    //  const addEmoji = e => {
+    //     // let sym = e.unified.split('-')
+    //     // let codesArray = []
+    //     // sym.forEach(el => codesArray.push('0x' + el))
+    //     // let emoji = String.fromCodePoint(...codesArray)
+    //     // setInput(input + emoji)
+    //   }
 
     return (
         <div>
@@ -111,9 +111,8 @@ const Input = () => {
                             <div className="picker">
                                 {
                                     showEmoji && (
-                                        <Picker
-                                            onSelect={addEmoji}
-                                        />
+                                        <Picker data={data} onEmojiSelect={addEmoji} />
+
 
                                     )
 
